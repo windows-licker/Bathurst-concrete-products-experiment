@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bathurst Concrete Products</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap');
+        #logoAnimationCanvas {
+            display: block;
+            margin-top: 10px;
+            margin-left: 2.5px;
+            height: 300px;
+        }
+        
+        .topBar {
+            margin-top: -20px;
+            height: 50px;
+            background: #007dc6;
+        }
+        
+        .topBar a {
+            display: inline-block;
+            text-align: right;
+            padding: 10px 65px;
+            font-size: 20px;
+            transition: .75s ease;
+            color: white;
+            font-weight: 400;
+            font-family: 'Oswald', sans-serif;
+            text-decoration: none;
+        }
+        
+        .topBar a:hover {
+            background-color: rgb(249, 252, 252);
+            opacity: 0.3;
+            color: #007dc6;
+            text-decoration: underline;
+            transition: 1s;
+        }
+        
+        body {
+            margin: 0;
+            color: black;
+        }
+        
+        .backDrop {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.3;
+            width: 75%;
+            height: 100%;
+        }
+        
+        #imgTagDisc {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <canvas id="logoAnimationCanvas" width="1500 " height="275"></canvas>
+
+    <div class="topBar">
+        <a class="active" href="#home">Home</a>
+        <a href="Our products">Our Products</a>
+        <a href="Stockists">Stockists</a>
+        <a href="Pallet collection">Pallet Collection</a>
+        <a href="about us">About Us</a>
+        <a href="contact us">Contact Us</a>
+
+    </div>
+    <div class="backDrop">
+        <img id="backdrop" src="disc-logo-backdrop.png">
+    </div>
+
+</body>
+
+<script src="BCP-animation.js"></script>
+
+</html>
